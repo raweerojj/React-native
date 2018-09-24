@@ -14,10 +14,16 @@ export default class Weather extends React.Component {
 
     render() {
         return (
-            <View style={styles.flex}>
+            <View style={styles.container}>
                 <ImageBackground source={require('../img/bnk48.png')} style={styles.backdrop}>
+                    
                     <Text>Zip code is {this.props.zipCode}.</Text>
-                    <Forecast {...this.state.forecast} /> 
+                    <Forecast {...this.state.forecast} />
+                    <View style={styles.container}>
+                        <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+                        <View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
+                        <View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+                    </View> 
                 </ImageBackground>
             </View>
         );
@@ -25,7 +31,8 @@ export default class Weather extends React.Component {
 }
 
 const styles = StyleSheet.create({
-    container: { paddingTop: 25  },
+    container: { paddingTop: 25,
+        flex: 1, flexDirection: 'column', justifyContent: 'flex-end', alignItems:'flex-start'
+    },
     backdrop: { width: '100%', height: '100%'},
-    flex: {flex:1, flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'flex-start'}
 });
