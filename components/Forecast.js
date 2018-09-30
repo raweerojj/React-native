@@ -20,7 +20,7 @@ export default class Forecast extends React.Component {
 const styles = StyleSheet.create({
     main : { textAlign:'center',
              color:'white',
-             opacity:0.7,
+             opacity: 10,
              fontSize:40,
              paddingTop: 20
     },
