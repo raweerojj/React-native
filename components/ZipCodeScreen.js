@@ -30,7 +30,7 @@ export default class WeatherScreen extends React.Component {
         const { navigate } = this.props.navigation;
         return (
             <View >
-                <ImageBackground source={require('../img/bnk48.png')} style={styles.backdrop}> 
+                <ImageBackground source={require('../img/cher_ed3.jpg')} style={styles.backdrop}> 
                 <FlatList 
                     data={availableZipItems}
                     keyExtractor={_keyExtractor}
@@ -44,7 +44,7 @@ export default class WeatherScreen extends React.Component {
 
 const styles = StyleSheet.create({
     backdrop: { width: '100%', height: '100%',
-                opacity: 0.8 
+                opacity: 2.5 
     },
     zipItem: {
         paddingTop: 5,

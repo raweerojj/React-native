@@ -38,7 +38,7 @@ export default class Weather extends React.Component {
 render() {
     return (
       <View style={styles.container}>
-        <ImageBackground source={require('../img/bnk48.png')} style={styles.backdrop}>
+        <ImageBackground source={require('../img/cher_ed.jpg')} style={styles.backdrop}>
             <View style = {styles.background}>
                 <Text style = {styles.zipCode}>Zip code is {this.props.zipCode}.</Text>
                 <Forecast {...this.state.forecast} />
@@ -63,7 +63,6 @@ const styles = StyleSheet.create({
     },
     zipCode: {  color:'white',
                 fontSize:30,
-                paddingTop: 20,
     },
     background : { backgroundColor : 'black',
                    opacity:0.5,
